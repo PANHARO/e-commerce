@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<div>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Contact</title>
+        <!-- Tailwind via CDN for quick preview; replace with your compiled Tailwind in production -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="/src/output.css" />
+    </head>
+
+
+
+    <body>
+        <div class=" bg-primary items-center flex-col justify-content-center">
+
+            <nav class="  fixed bg-secondary shadow-lg text-white px-10 py-3 flex items-center
+                justify-center font-bold text-xl w-full z-100 gap-4 top-0 ">
+                <a href="/" class="px-5 py-2 hover:bg-accent rounded-lg">Home</a>
+                <a href="/" class="px-5 py-2 hover:bg-accent rounded-lg">Men</a>
+                <a href="/" class="px-5 py-2 hover:bg-accent rounded-lg">Women</a>
+                <a href="/" class="px-5 py-2 hover:bg-accent rounded-lg">Kids</a>
+                <a href="/" class="px-5 py-2 hover:bg-accent rounded-lg">About us</a>
+                <a href="./contact.html" class="px-5 py-2 hover:bg-accent rounded-lg">Contact</a>
+            </nav>
+
+            <div class="  flex flex-col bg-primary max-w-6xl mx-auto px-6 py-12">
+                <section class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+                    <!-- Contact form -->
+                    <div class="bg-gray-700 text-white rounded-2xl shadow p-8">
+                        <h2 class="text-2xl font-bold mb-2">Get in touch</h2>
+                        <p class="text-sm text-gray-200 mb-6">Questions about an order, returns, or
+                            collaborations? Send
+                            us
+                            a
+                            message and we'll reply within 24 hours.</p>
+
+                        <form id="contactForm" class="space-y-4" action="#" method="POST"
+                            onsubmit="handleSubmit(event)">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <label class="block">
+                                    <span class="text-sm font-medium">Full name</span>
+                                    <input name="name" required
+                                        class="mt-1 block w-full rounded-lg border-gray-200 shadow-sm focus:ring-2 focus:ring-indigo-300 focus:border-indigo-500"
+                                        placeholder="Your name" />
+                                </label>
+
+                                <label class="block">
+                                    <span class="text-sm font-medium">Email</span>
+                                    <input name="email" type="email" required
+                                        class="mt-1 block w-full rounded-lg border-gray-200 shadow-sm focus:ring-2 focus:ring-indigo-300 focus:border-indigo-500"
+                                        placeholder="you@example.com" />
+                                </label>
+                            </div>
+
+                            <label class="block">
+                                <span class="text-sm font-medium">Subject</span>
+                                <input name="subject"
+                                    class="mt-1 block w-full rounded-lg border-gray-200 shadow-sm focus:ring-2 focus:ring-indigo-300 focus:border-indigo-500"
+                                    placeholder="e.g. Return request / Sizing question" />
+                            </label>
+
+                            <label class="block">
+                                <span class="text-sm font-medium">Order number (optional)</span>
+                                <input name="order"
+                                    class="mt-1 block w-full rounded-lg border-gray-200 shadow-sm focus:ring-2 focus:ring-indigo-300 focus:border-indigo-500"
+                                    placeholder="#12345" />
+                            </label>
+
+                            <label class="block">
+                                <span class="text-sm font-medium">Message</span>
+                                <textarea name="message" required rows="5"
+                                    class="mt-1 block w-full rounded-lg border-gray-200 shadow-sm focus:ring-2 focus:ring-indigo-300 focus:border-indigo-500"
+                                    placeholder="Tell us how we can help..."></textarea>
+                            </label>
+
+                            <div class="flex items-center gap-3">
+                                <input id="subscribe" name="subscribe" type="checkbox"
+                                    class="h-4 w-4 rounded border-gray-300" />
+                                <label for="subscribe" class="text-sm text-">Subscribe to our newsletter
+                                    for 10%
+                                    off</label>
+                            </div>
+
+                            <div class="flex items-center justify-between gap-4">
+                                <p id="formStatus" class="text-sm text-gray-600"></p>
+                                <button type="submit"
+                                    class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-indigo-600 text-white font-medium shadow hover:bg-indigo-700">Send
+                                    message</button>
+                            </div>
+
+                            <p class="text-xs text-gray-400">By sending this message you agree to our <a href="#"
+                                    class="underline text-red-700">privacy policy</a>.</p>
+                        </form>
+                    </div>
+
+                    <!-- Contact info + map -->
+                    <div class="space-y-6">
+                        <div class="bg-gray-700 rounded-2xl shadow p-6 flex flex-col gap-4">
+                            <h3 class="text-lg text-white font-semibold">Customer support</h3>
+                            <p class="text-sm text-white">Mon — Fri: 7:00 am — 10:00pm</p>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                                <div class="space-y-2">
+                                    <p class="text-xs text-white">Phone</p>
+                                    <a href="tel:+85512345678" class="font-medium text-white">+855 12 345
+                                        678</a>
+                                </div>
+                                <div class="space-y-2">
+                                    <p class="text-xs text-white">Email</p>
+                                    <a href="mailto:hello@modernclothes.co"
+                                        class="font-medium text-white">hello@modernclothes.co</a>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <p class="text-xs text-white">Address</p>
+                                <p class="text-sm text-white">No. 45, Street 123, Phnom Penh, Cambodia</p>
+                            </div>
+
+                            <div class="flex gap-3 mt-4">
+                                <a href="#" aria-label="Instagram"
+                                    class="inline-flex items-center gap-2 px-3 py-2 rounded-lg border text-sm text-white hover:bg-gray-800">Instagram</a>
+                                <a href="#" aria-label="Facebook"
+                                    class="inline-flex items-center gap-2 px-3 py-2 rounded-lg border text-sm text-white hover:bg-gray-800">Facebook</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-700 hadow-xl/30 rounded-2xl shadow overflow-hidden">
+                            <!-- Replace the src with your real Google Maps embed or Mapbox iframe -->
+                            <div class="h-64 bg-gray-700  shadow-xl/30 flex items-center justify-center text-gray-400">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3715.5695950551208!2d104.9377490748171!3d11.553090088646867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310956d2a2d70f1d%3A0xea84a6a9241db2f6!2sMorgan%20Tower!5e1!3m2!1sen!2skh!4v1760261216151!5m2!1sen!2skh"
+                                    class="w-full h-full" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+
+                        <div class="text-sm text-white">Prefer phone? Call our support line or use WhatsApp:
+                            <a href="https://wa.me/85512345678" class="underline">Chat on WhatsApp</a>.
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer class=" border-t bg-gray-700 mt-12 ">
+                <div class="max-w-6xl mx-auto px-6 py-6 flex  items-center justify-between text-sm text-white w-full">
+                    <span>© <span id="year"></span> Modern Clothes Co.</span>
+                    <div class="flex gap-4">
+                        <a href="#" class="hover:underline">Terms</a>
+                        <a href="#" class="hover:underline">Privacy</a>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+
+    </body>
+
+
+</html>
