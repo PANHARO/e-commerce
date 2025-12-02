@@ -6,7 +6,7 @@
     <title>GROUP-1</title>
     <link rel="stylesheet" href="./src/output.css" />
   </head>
-  <body class="bg-primary">
+  <body class="bg-primary mx-auto">
     <nav
       class="bg-secondary text-white px-10 py-3 flex items-center justify-center font-bold text-xl fixed w-full z-100 flex-wrap gap-4 top-0"
     >
@@ -15,7 +15,9 @@
       <a href="/" class="px-5 py-2 hover:bg-accent rounded-lg">Women</a>
       <a href="/" class="px-5 py-2 hover:bg-accent rounded-lg">Kids</a>
       <a href="/" class="px-5 py-2 hover:bg-accent rounded-lg">About us</a>
-      <a href="./contact.html" class="px-5 py-2 hover:bg-accent rounded-lg">Contact</a>
+      <a href="./contact.html" class="px-5 py-2 hover:bg-accent rounded-lg"
+        >Contact</a
+      >
     </nav>
 
     <!-- Hero section -->
@@ -29,8 +31,130 @@
         <div
           class="h-150 bg-secondary absolute right-0 top-0 opacity-95 w-[45%] flex flex-col items-center justify-center scroll-px-52 gap-4 px-5"
         >
-          <h1 class="text-white text-3xl font-bold">We have what you <span class="text-accent">need</span>, and <span class="text-accent">want</span>.</h1>
-          <p class="text-justify text-gray-300">We have a wide range of selections to ensure you will get what you need. We use only top-grade materials for all of our products.</p>
+          <h1 class="text-white text-3xl font-bold">
+            We have what you <span class="text-accent">need</span>, and
+            <span class="text-accent">want</span>.
+          </h1>
+          <p class="text-justify text-gray-300">
+            We have a wide range of selections to ensure you will get what you
+            need. We use only top-grade materials for all of our products.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards -->
+
+    <section class="container mx-auto mt-20">
+      <div
+        class="grid grid-cols-1 gap-x-10 sm:grid-cols-2 lg:grid-cols-3 pb-3xl"
+        data-component-name="card-grid"
+      >
+        <div
+          data-component-name="card"
+          class="ring-0 ring-white/20 border-white rounded-xl bg-accent p-8"
+          data-mode="dark"
+        >
+          <div>
+            <picture data-component-name="image"
+              ><img
+                alt="A map of the world with a stat showing 99.9% uptime"
+                class="mb-md rounded-xl"
+                height="478"
+                loading="lazy"
+                src="https://cdn.shopify.com/b/shopify-brochure2-assets/bb72ac6bae01033e0d9a1723883fc5d4.png?width=680&amp;height=478"
+                width="680"
+            /></picture>
+          </div>
+          <div class="">
+            <div
+              class="text-left text-section-dark-text flex flex-col pt-xs gap-y-3.5"
+              data-mode="dark"
+              data-component-name="built-into-every-store-card-1"
+            >
+              <h3 class="richtext text-t5 text-balance">
+                Cheetah fast.<br />Ridiculously reliable.
+              </h3>
+              <div class="richtext text-body-base opacity-body pt-2">
+                With a 99.9% uptime rate and 300 points of presence worldwide,
+                Shopify’s infrastructure won’t leave your customers hanging.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          data-component-name="card"
+          class="ring-0 ring-white/20 border-white rounded-xl bg-accent p-8"
+          data-mode="dark"
+        >
+          <div>
+            <picture data-component-name="image"
+              ><img
+                alt="The Shopify checkout experience"
+                class="mb-md rounded-xl"
+                height="478"
+                loading="lazy"
+                src="https://cdn.shopify.com/b/shopify-brochure2-assets/54fc8a0f66882ca63c01a643a8b43c1d.jpg?width=680&amp;height=478"
+                width="680"
+            /></picture>
+          </div>
+          <div class="">
+            <div
+              class="text-left text-section-dark-text flex flex-col pt-xs gap-y-3.5"
+              data-mode="dark"
+              data-component-name="built-into-every-store-card-2"
+            >
+              <h3 class="richtext text-t5 text-balance">
+                The world’s<br />best checkout
+              </h3>
+              <div class="richtext text-body-base opacity-body pt-2">
+                Shopify’s checkout
+                <a
+                  href="/enterprise/blog/shopify-checkout"
+                  data-component-name="card-checkout"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >converts a whole 15% better</a
+                >
+                on average than other commerce platforms. Which means more sales
+                for you.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          data-component-name="card"
+          class="ring-0 ring-white/20 border-white rounded-xl bg-accent p-8"
+          data-mode="dark"
+        >
+          <div>
+            <picture data-component-name="image"
+              ><img
+                alt="The Shopify Magic AI tool being used to generate a tagline "
+                class="mb-md rounded-xl"
+                height="478"
+                loading="lazy"
+                src="https://cdn.shopify.com/b/shopify-brochure2-assets/27e4cd83b4296c634951aec9deee6a91.png?width=680&amp;height=478"
+                width="680"
+            /></picture>
+          </div>
+          <div class="">
+            <div
+              class="text-left text-section-dark-text flex flex-col pt-xs gap-y-3.5"
+              data-mode="dark"
+              data-component-name="built-into-every-store-card-3"
+            >
+              <h3 class="richtext text-t5 text-balance">
+                Powerful AI<br />at every turn
+              </h3>
+              <div class="richtext text-body-base opacity-body pt-2">
+                From launching your store to managing and scaling it, boost
+                every part of your business with
+                <a href="/magic" data-component-name="ai-tools">built-in AI</a>
+                that's made for commerce.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
